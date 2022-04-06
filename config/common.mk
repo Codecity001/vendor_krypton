@@ -138,8 +138,7 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 
 ifeq ($(GAPPS_BUILD),true)
-    $(call inherit-product-if-exists, vendor/google/gms/config.mk)
-    $(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+    $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 endif
 
 #OTA tools
